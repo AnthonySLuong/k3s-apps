@@ -1,0 +1,7 @@
+namespace: blocky
+
+resources:
+  - namespace.yml
+  - configmap.yml
+  - deployment.yml
+  - service.yml

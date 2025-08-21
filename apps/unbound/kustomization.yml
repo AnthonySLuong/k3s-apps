@@ -1,0 +1,7 @@
+namespace: unbound
+
+resources:
+  - namespace.yml
+  - configmap.yml
+  - deployment.yml
+  - service.yml
