@@ -13,7 +13,7 @@ spec:
     spec:
       containers:
         - name: unbound
-          image: mvance/unbound:latest
+          image: klutchell/unbound:main
           ports:
             - containerPort: 53
               protocol: UDP
@@ -21,8 +21,7 @@ spec:
               protocol: TCP
           volumeMounts:
             - name: config
-              mountPath: /opt/unbound/etc/unbound/unbound.conf
-              subPath: unbound.conf
+              mountPath: /etc/unbound/custom.conf.d
       volumes:
         - name: config
           configMap:
