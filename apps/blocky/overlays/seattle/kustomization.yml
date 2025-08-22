@@ -1,6 +1,6 @@
 resources:
   - ../../base
-
+namespace: dns
 patches:
   - target:
       kind: Deployment

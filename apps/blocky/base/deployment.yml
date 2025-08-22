@@ -2,6 +2,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: blocky
+  namespace: dns
 spec:
   selector:
     matchLabels:
@@ -13,7 +14,7 @@ spec:
     spec:
       containers:
         - name: blocky
-          image: spx01/blocky:latest
+          image: spx01/blocky:v0.26.2
           args: ["--config", "/app/config.yml"]
           ports:
             - containerPort: 53
