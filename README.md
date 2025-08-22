@@ -7,5 +7,5 @@ Current apps running on cluster
 ## Commands
 Apply everything
 ```shell
-kubectl apply -k apps
+kubectl apply -k overlays/seattle
 ```
