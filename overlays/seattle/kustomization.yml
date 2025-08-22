@@ -1,0 +1,4 @@
+resources:
+  - ../../apps/kube-vip/overlays/seattle
+  - ../../apps/unbound/overlays/seattle
+  - ../../apps/blocky/overlays/seattle

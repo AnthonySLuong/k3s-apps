@@ -1,4 +1,0 @@
-resources:
-  - ./kube-vip
-  - ./unbound
-  - ./blocky

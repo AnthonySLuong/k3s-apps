@@ -1,0 +1,7 @@
+# apps/blocky/overlays/cluster1/patch-replicas.yml
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: blocky
+spec:
+  replicas: 2

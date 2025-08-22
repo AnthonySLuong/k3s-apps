@@ -1,0 +1,12 @@
+resources:
+  - ../../base
+
+patches:
+  - target:
+      kind: DaemonSet
+      name: kube-vip-ds
+    path: patch-address.yml
+  - target:
+      kind: ConfigMap
+      name: kube-vip
+    path: patch-range-global.yml

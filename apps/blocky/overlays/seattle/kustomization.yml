@@ -1,0 +1,12 @@
+resources:
+  - ../../base
+
+patches:
+  - target:
+      kind: Deployment
+      name: blocky
+    path: patch-replicas.yml
+  - target:
+      kind: Service
+      name: blocky
+    path: patch-service-ip.yml

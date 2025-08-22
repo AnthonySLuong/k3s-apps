@@ -1,33 +1,29 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: blocky
+  name: unbound
 spec:
-  replicas: 2
   selector:
     matchLabels:
-      app: blocky
+      app: unbound
   template:
     metadata:
       labels:
-        app: blocky
+        app: unbound
     spec:
       containers:
-        - name: blocky
-          image: spx01/blocky:latest
-          args: ["--config", "/app/config.yml"]
+        - name: unbound
+          image: mvance/unbound:latest
           ports:
             - containerPort: 53
               protocol: UDP
             - containerPort: 53
               protocol: TCP
-            - containerPort: 4000
-              protocol: TCP
           volumeMounts:
             - name: config
-              mountPath: /app/config.yml
-              subPath: config.yml
+              mountPath: /opt/unbound/etc/unbound/unbound.conf
+              subPath: unbound.conf
       volumes:
         - name: config
           configMap:
-            name: blocky-config
+            name: unbound-config
