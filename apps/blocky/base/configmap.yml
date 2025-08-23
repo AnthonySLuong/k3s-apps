@@ -25,3 +25,6 @@ data:
       tls: 853
       http: 4000
       https: 443
+    prometheus:
+      enable: true
+      path: /metrics
