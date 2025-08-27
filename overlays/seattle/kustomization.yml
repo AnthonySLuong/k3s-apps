@@ -1,5 +1,5 @@
 resources:
-  - ../../apps/kube-vip/overlays/seattle
+  - ../../apps/namespaces
   - ../../apps/unbound/overlays/seattle
   - ../../apps/blocky/overlays/seattle
   - ../../apps/prometheus/overlays/seattle
