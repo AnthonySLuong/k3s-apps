@@ -1,5 +1,0 @@
-resources:
-  - rbac.yml
-  - configmap.yml
-  - kube-vip-daemon.yml
-

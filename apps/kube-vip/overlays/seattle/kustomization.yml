@@ -1,8 +1,0 @@
-resources:
-  - ../../base
-
-patches:
-  - target:
-      kind: DaemonSet
-      name: kube-vip-ds
-    path: patch-address.yml
