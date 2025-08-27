@@ -50,10 +50,6 @@ spec:
           value: "true"
         - name: cp_namespace
           value: kube-system
-        - name: svc_enable
-          value: "true"
-        - name: svc_leasename
-          value: plndr-svcs-lock
         - name: vip_leaderelection
           value: "true"
         - name: vip_leasename
@@ -69,7 +65,6 @@ spec:
         - name: prometheus_server
           value: :2112
         image: ghcr.io/kube-vip/kube-vip:v1.0.0
-        imagePullPolicy: IfNotPresent
         name: kube-vip
         resources: {}
         securityContext:
