@@ -13,7 +13,7 @@ spec:
       memory: 400Mi
       cpu: 100m
   retention: 1d
-  remoteWrite:
+  remote_write:
     - url: https://prometheus-prod-36-prod-us-west-0.grafana.net/api/prom/push
       basicAuth:
         username:

@@ -1,6 +1,5 @@
 resources:
   - ../../resources/namespaces
-  - ../../resources/secrets
   - ../../apps/unbound/overlays/seattle
   - ../../apps/blocky/overlays/seattle
   - ../../apps/prometheus-operator/base

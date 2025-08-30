@@ -1,14 +1,17 @@
 apiVersion: monitoring.coreos.com/v1
-kind: ServiceMonitor
+kind: PodMonitor
 metadata:
-  name: blocky-monitor
+  name: blocky-pod-monitor
+  namespace: monitoring
 spec:
+  namespaceSelector:
+    matchNames:
+      - dns
   selector:
     matchLabels:
       app: blocky
-  namespaceSelector:
-    matchNames:
-      - default
-  endpoints:
-    - port: http-metrics
-      interval: 30s
+  podMetricsEndpoints:
+    - interval: 30s
+      path: /metrics
+      port: http
+      scheme: http
