@@ -1,5 +1,5 @@
 namespace: monitoring
 
 resources:
-  - configmap.yml
-  - deployment.yml
+  - prometheus.yml
+  - blocky-monitor.yml

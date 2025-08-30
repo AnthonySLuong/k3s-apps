@@ -1,0 +1,24 @@
+apiVersion: monitoring.coreos.com/v1
+kind: Prometheus
+metadata:
+  name: main
+  namespace: monitoring
+spec:
+  replicas: 1
+  serviceAccountName: prometheus-operator
+  serviceMonitorSelector: {}
+  podMonitorSelector: {}
+  resources:
+    requests:
+      memory: 400Mi
+      cpu: 100m
+  retention: 1d
+  remoteWrite:
+    - url: https://prometheus-prod-36-prod-us-west-0.grafana.net/api/prom/push
+      basicAuth:
+        username:
+          name: grafana-remote-creds
+          key: username
+        password:
+          name: grafana-remote-creds
+          key: password

@@ -16,13 +16,17 @@ metadata:
 rules:
   # Core resources for Prometheus pods
   - apiGroups: [""]
-    resources: ["pods", "services", "endpoints", "namespaces", "events"]
-    verbs: ["get", "list", "watch", "create", "patch"]
+    resources: ["pods", "services", "endpoints", "namespaces", "events", "configmaps", "secrets", "nodes"]
+    verbs: ["get", "list", "watch", "create", "update", "patch", "delete"]
 
   # StorageClasses for PVCs
   - apiGroups: ["storage.k8s.io"]
     resources: ["storageclasses"]
     verbs: ["get", "list", "watch"]
+
+  - apiGroups: ["apps"]
+    resources: ["statefulsets"]
+    verbs: ["get", "list", "watch", "create", "update", "patch", "delete"]
 
   # All monitoring CRDs
   - apiGroups: ["monitoring.coreos.com"]
