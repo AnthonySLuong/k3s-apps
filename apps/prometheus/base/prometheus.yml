@@ -1,7 +1,7 @@
 apiVersion: monitoring.coreos.com/v1
 kind: Prometheus
 metadata:
-  name: main
+  name: prometheus-k3s-seattle
   namespace: monitoring
 spec:
   replicas: 1
@@ -13,7 +13,7 @@ spec:
       memory: 400Mi
       cpu: 100m
   retention: 1d
-  remote_write:
+  remoteWrite:
     - url: https://prometheus-prod-36-prod-us-west-0.grafana.net/api/prom/push
       basicAuth:
         username:
