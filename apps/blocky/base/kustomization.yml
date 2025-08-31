@@ -1,6 +1,5 @@
 namespace: dns
 
 resources:
-  - configmap.yml
   - deployment.yml
   - service.yml
