@@ -30,6 +30,9 @@ data:
       prefetching: true
     clientLookup:
       upstream: 192.168.0.1
+    customDNS:
+      mapping:
+        hubble.local: 192.168.0.20
     prometheus:
       enable: true
       path: /metrics
