@@ -1,5 +1,4 @@
 namespace: monitoring
 
 resources:
-  - prometheus.yml
   - blocky-monitor.yml
