@@ -10,7 +10,3 @@ patches:
       kind: Service
       name: blocky
     path: patch-service-ip.yml
-  - target:
-      kind: ConfigMap
-      name: blocky-config
-    path: patch-configmap.yml
