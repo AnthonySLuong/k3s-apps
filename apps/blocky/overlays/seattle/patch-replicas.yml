@@ -4,4 +4,4 @@ kind: Deployment
 metadata:
   name: blocky
 spec:
-  replicas: 2
+  replicas: 1
