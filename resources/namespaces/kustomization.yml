@@ -1,3 +1,4 @@
 resources:
   - dns.yml
   - networking.yml
+  - monitoring.yml
