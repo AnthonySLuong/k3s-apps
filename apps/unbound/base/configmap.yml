@@ -13,7 +13,7 @@ data:
       do-tcp: yes
       access-control: 0.0.0.0/0 allow
     cachedb:
-      backend: "redis.dns.svc.cluster.local:6379"
-      redis-server-host: redis
+      backend: "redis"
+      redis-server-host: redis.dns.svc.cluster.local
       redis-server-port: 6379
       redis-expire-records: yes
