@@ -37,3 +37,7 @@ data:
     prometheus:
       enable: true
       path: /metrics
+    redis:
+      address: redis.dns.svc.cluster.local:6379
+      database: 1
+      required: true
