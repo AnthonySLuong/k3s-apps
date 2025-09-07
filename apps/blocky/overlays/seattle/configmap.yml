@@ -33,6 +33,7 @@ data:
     customDNS:
       mapping:
         hubble.local: 192.168.0.20
+        speedtest.local: 192.168.0.20
     prometheus:
       enable: true
       path: /metrics

@@ -2,4 +2,5 @@ resources:
   - deployment.yml
   - service.yml
   - serviceAccount.yml
+  - ingressClass.yml
   - hubble.yml

@@ -5,3 +5,4 @@ resources:
   - ../../apps/unbound/overlays/seattle
   - ../../apps/blocky/overlays/seattle
   - ../../apps/traefik/overlays/seattle
+  - ../../apps/openspeedtest/base
