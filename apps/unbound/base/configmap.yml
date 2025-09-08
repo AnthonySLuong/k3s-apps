@@ -12,6 +12,7 @@ data:
       do-udp: yes
       do-tcp: yes
       access-control: 0.0.0.0/0 allow
+      module-config: "validator cachedb iterator"
     cachedb:
       backend: "redis"
       redis-server-host: redis.dns.svc.cluster.local
