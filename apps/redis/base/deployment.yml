@@ -43,3 +43,11 @@ spec:
             periodSeconds: 10
             timeoutSeconds: 5
             failureThreshold: 3
+        - name: redis-exporter
+          image: oliver006/redis_exporter:v1.76.0
+          imagePullPolicy: IfNotPresent
+          ports:
+            - name: metrics
+              containerPort: 9121
+          args:
+            - --redis.addr=redis://localhost:6379
