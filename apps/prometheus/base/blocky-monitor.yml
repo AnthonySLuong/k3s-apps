@@ -11,7 +11,8 @@ spec:
     matchLabels:
       app: blocky
   podMetricsEndpoints:
-    - interval: 30s
+    - interval: 15s
+      scrapeTimeout: 5s
       path: /metrics
       port: http
       scheme: http

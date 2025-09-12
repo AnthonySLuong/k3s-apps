@@ -10,8 +10,11 @@ spec:
   podMonitorSelector: {}
   resources:
     requests:
-      memory: 400Mi
+      memory: 100Mi
       cpu: 100m
+    limits:
+      memory: 500Mi
+      cpu: 500m
   retention: 1d
   remoteWrite:
     - url: https://prometheus-prod-36-prod-us-west-0.grafana.net/api/prom/push
