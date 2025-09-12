@@ -48,11 +48,15 @@ spec:
               port: 53
             initialDelaySeconds: 20
             periodSeconds: 10
+            timeoutSeconds: 1
+            failureThreshold: 3
           livenessProbe:
             tcpSocket:
               port: 53
             initialDelaySeconds: 60
             periodSeconds: 10
+            timeoutSeconds: 1
+            failureThreshold: 3
       volumes:
         - name: config
           configMap:
