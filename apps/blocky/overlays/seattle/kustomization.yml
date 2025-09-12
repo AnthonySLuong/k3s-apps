@@ -1,3 +1,5 @@
+namespace: dns
+
 resources:
   - ../../base
   - configmap.yml
