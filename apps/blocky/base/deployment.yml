@@ -17,6 +17,12 @@ spec:
       labels:
         app: blocky
     spec:
+      tolerations:
+      - key: "hardware"
+        operator: "Equal"
+        value: "lowpower"
+        effect: "NoSchedule"
+        
       containers:
         - name: blocky
           image: spx01/blocky:v0.26.2
