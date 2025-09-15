@@ -11,6 +11,12 @@ spec:
       labels:
         app: unbound
     spec:
+      tolerations:
+      - key: "hardware"
+        operator: "Equal"
+        value: "lowpower"
+        effect: "NoSchedule"
+
       containers:
         - name: unbound
           image: klutchell/unbound:main
