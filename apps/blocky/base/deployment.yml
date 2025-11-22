@@ -19,15 +19,8 @@ spec:
     spec:
       containers:
         - name: blocky
-          image: spx01/blocky:v0.27.0
+          image: spx01/blocky:v0.28.2
           imagePullPolicy: IfNotPresent
-          securityContext:
-            runAsNonRoot: true
-            allowPrivilegeEscalation: false
-            capabilities:
-              drop: ["ALL"]
-            seccompProfile:
-              type: RuntimeDefault
           args: ["--config", "/app/config.yml"]
           ports:
             - name: dns-udp

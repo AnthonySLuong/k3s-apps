@@ -10,16 +10,10 @@ spec:
     metadata:
       labels:
         app: unbound
+    spec:
       containers:
         - name: unbound
           image: klutchell/unbound:main
-          securityContext:
-            runAsNonRoot: true
-            allowPrivilegeEscalation: false
-            capabilities:
-              drop: ["ALL"]
-            seccompProfile:
-              type: RuntimeDefault
           ports:
             - containerPort: 53
               protocol: UDP

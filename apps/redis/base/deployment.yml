@@ -16,13 +16,6 @@ spec:
         - name: redis
           image: redis:8.4.0
           imagePullPolicy: IfNotPresent
-          securityContext:
-            runAsNonRoot: true
-            allowPrivilegeEscalation: false
-            capabilities:
-              drop: ["ALL"]
-            seccompProfile:
-              type: RuntimeDefault
           ports:
             - containerPort: 6379
           resources:
@@ -53,13 +46,6 @@ spec:
         - name: redis-exporter
           image: oliver006/redis_exporter:v1.76.0
           imagePullPolicy: IfNotPresent
-          securityContext:
-            runAsNonRoot: true
-            allowPrivilegeEscalation: false
-            capabilities:
-              drop: ["ALL"]
-            seccompProfile:
-              type: RuntimeDefault
           ports:
             - name: metrics
               containerPort: 9121
