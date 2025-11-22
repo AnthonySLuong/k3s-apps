@@ -1,8 +1,0 @@
-resources:
-  - ../../base
-
-patches:
-  - target:
-      kind: Service
-      name: traefik
-    path: patch-service-ip.yml
