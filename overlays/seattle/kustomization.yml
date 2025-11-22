@@ -2,9 +2,6 @@ resources:
   - ../../resources/namespaces
   - ../../apps/prometheus-operator/base
   - ../../apps/redis/base
-  - ../../apps/openspeedtest/base
-  
   - ../../apps/prometheus/overlays/seattle
   - ../../apps/unbound/overlays/seattle
   - ../../apps/blocky/overlays/seattle
-  - ../../apps/traefik/overlays/seattle
