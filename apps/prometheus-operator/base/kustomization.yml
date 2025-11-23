@@ -1,5 +1,0 @@
-namespace: monitoring
-
-resources:
-  - stripped-down-crds.yml
-  - operator.yml

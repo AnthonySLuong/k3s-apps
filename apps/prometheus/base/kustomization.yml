@@ -1,5 +1,0 @@
-namespace: monitoring
-
-resources:
-  - blocky-monitor.yml
-  - redis-monitor.yml
