@@ -1,8 +1,5 @@
 # Overview
-Kustomize for K3s clusters  
+Central Repo to run servers on Kubernete cluster
 
-## Commands
-Apply everything
-```shell
-kubectl apply -k overlays/seattle
-```
+## Workflow
+Using ArgoCD to apply changes
