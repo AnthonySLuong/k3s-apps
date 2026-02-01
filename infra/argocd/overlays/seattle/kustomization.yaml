@@ -1,0 +1,8 @@
+resources:
+  - ../../base
+
+patches:
+  - target:
+      kind: Service
+      name: blocky
+    path: patch-service-ip.yml
