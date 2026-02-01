@@ -4,5 +4,5 @@ resources:
 patches:
   - target:
       kind: Service
-      name: blocky
-    path: patch-service-ip.yml
+      name: argocd-server
+    path: patch-service-ip.yaml
