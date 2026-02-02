@@ -1,5 +1,8 @@
 resources:
   - ../../base
 
-patchesStrategicMerge:
-  - patch-data-path.yaml
+patches:
+  - path: patch-data-path.yaml
+    target:
+      kind: Setting
+      name: default-data-path
