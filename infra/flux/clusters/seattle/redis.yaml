@@ -5,7 +5,7 @@ metadata:
   namespace: flux-system
 spec:
   interval: 10m
-  path: ./apps/redis/overlays/seattle
+  path: ./apps/redis/base
   targetNamespace: dns
   prune: true
   sourceRef:
