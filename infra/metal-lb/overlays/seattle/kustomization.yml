@@ -4,6 +4,5 @@ kind: Kustomization
 resources:
   - ../../base
 
-# Include the IP pool for dev
 resources:
   - ip-pool.yml
