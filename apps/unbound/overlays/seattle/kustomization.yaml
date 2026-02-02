@@ -5,4 +5,4 @@ patches:
   - target:
       kind: Deployment
       name: unbound
-    path: patch-replicas.yml
+    path: patch-replicas.yaml
