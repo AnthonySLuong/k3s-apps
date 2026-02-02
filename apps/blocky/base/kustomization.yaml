@@ -1,0 +1,5 @@
+namespace: dns
+
+resources:
+  - deployment.yaml
+  - service.yaml

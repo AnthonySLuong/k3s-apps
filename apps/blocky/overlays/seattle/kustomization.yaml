@@ -2,14 +2,14 @@ namespace: dns
 
 resources:
   - ../../base
-  - configmap.yml
+  - configmap.yaml
 
 patches:
   - target:
       kind: Deployment
       name: blocky
-    path: patch-replicas.yml
+    path: patch-replicas.yaml
   - target:
       kind: Service
       name: blocky
-    path: patch-service-ip.yml
+    path: patch-service-ip.yaml
