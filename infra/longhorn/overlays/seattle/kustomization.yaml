@@ -1,8 +1,0 @@
-resources:
-  - ../../base
-
-patches:
-  - path: patch-data-path.yaml
-    target:
-      kind: Setting
-      name: default-data-path

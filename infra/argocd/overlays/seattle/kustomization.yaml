@@ -1,8 +1,0 @@
-resources:
-  - ../../base
-
-patches:
-  - target:
-      kind: Service
-      name: argocd-server
-    path: patch-service-ip.yaml
