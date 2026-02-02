@@ -5,7 +5,7 @@ metadata:
   namespace: flux-system
 spec:
   interval: 10m
-  path: .apps/blocky/overlays/seattle
+  path: ./apps/blocky/overlays/seattle
   targetNamespace: dns
   prune: true
   sourceRef:
