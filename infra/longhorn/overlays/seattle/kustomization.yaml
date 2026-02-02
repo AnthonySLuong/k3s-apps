@@ -1,2 +1,5 @@
 resources:
   - ../../base
+
+patchesStrategicMerge:
+  - patch-data-path.yaml
